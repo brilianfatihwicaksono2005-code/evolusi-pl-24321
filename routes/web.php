@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\OrderController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -9,3 +9,5 @@ Route::get('/', function () {
 
 Route::get('/pesan-joki', [OrderController::class, 'create'])->name('joki.create');
 Route::post('/pesan-joki', [OrderController::class, 'store'])->name('joki.store');
+
+Route::resource('tasks', TaskController::class);
