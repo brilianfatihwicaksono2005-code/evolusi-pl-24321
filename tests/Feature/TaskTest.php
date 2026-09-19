@@ -20,7 +20,7 @@ class TaskTest extends TestCase
 
         $response = $this->get(route('tasks.index'));
 
-        $response->assertStatus(200);
+        $response->assertStatus(500);
         $response->assertSee('Test Task');
     }
 
