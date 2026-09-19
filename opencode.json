@@ -1,0 +1,20 @@
+{
+  "provider": {
+    "9router": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "9Router",
+      "options": {
+        "baseURL": "http://localhost:20128/v1",
+        "apiKey": "sk-3c4bfdf24558cf70-mqmawh-539c757a"
+      },
+      "models": {
+        "gemini-3.5-flash": {
+          "name": "Gemini 3.5 Flash"
+        },
+        "gemini-3.7-flash": {
+          "name": "Gemini 3.7 Flash"
+        }
+      }
+    }
+  }
+}
