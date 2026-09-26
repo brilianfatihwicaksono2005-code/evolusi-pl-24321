@@ -10,6 +10,9 @@ class TaskController extends Controller
     public function index()
     {
         $tasks = Task::latest()->get();
+        if (request()->wantsJson() || request()->is('api/*')) {
+            return response()->json($tasks);
+        }
         return view('tasks.index', compact('tasks'));
     }
 
