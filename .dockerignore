@@ -1,0 +1,33 @@
+# === Node / Frontend ===
+node_modules
+npm-debug.log
+
+# === PHP / Composer ===
+vendor
+
+# === Git ===
+.git
+.gitignore
+.gitattributes
+
+# === Environment / Secrets ===
+.env
+.env.local
+.env.*.local
+
+# === OS & Editor artefacts ===
+.DS_Store
+Thumbs.db
+.editorconfig
+
+# === Laravel runtime caches (generated inside container) ===
+storage/logs/
+bootstrap/cache/
+
+# === Test & CI ===
+.phpunit.result.cache
+.github
+
+# === Build output ===
+public/build
+public/hot
